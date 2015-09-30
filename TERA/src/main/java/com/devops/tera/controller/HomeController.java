@@ -24,6 +24,6 @@ public class HomeController
 	public ModelAndView loadHomePage() 
 	{
 		logger.info("In the method loadHomePage of HomeController.");
-		return (new ModelAndView("Home"));
+		return (new ModelAndView("HomePage"));
 	}
 }
