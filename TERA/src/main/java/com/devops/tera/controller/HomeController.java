@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @version 0.1
  * @since   2014-12-08
  */
+//Added comment
 @Controller
 public class HomeController 
 {
