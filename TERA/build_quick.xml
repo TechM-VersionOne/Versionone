@@ -11,7 +11,7 @@
     <property name="junit.jar" location="lib/junit-3.8.2.jar"/>
     <property name="clover.db" location="build/clover/db/clover.db"/>
 
-    <property name="clover.jar" location="D:\Versionone\Clover\lib/clover.jar"/>
+    <property name="clover.jar" location="D:\Versionone\Clover-Ant\lib/clover.jar"/>
     <taskdef resource="cloverlib.xml" classpath="${clover.jar}"/>
 
     <target name="with.clover">
@@ -28,11 +28,11 @@
         <path refid="build.classpath"/>
         <pathelement location="${test.build}"/>
     </path>
-
+<!--
     <target name="code.compile" depends="with.clover"
             description="Creates ${app.build} directory and compiles sources from ${src} to ${app.build}">
         <mkdir dir="${app.build}"/>
-        <javac srcdir="${src}" destdir="${app.build}" classpathref="build.classpath" source="1.4"/>
+        <javac srcdir="${src}" destdir="${app.build}" classpathref="build.classpath" source="5"/>
     </target>
 
     <target name="test.compile" depends="code.compile"
@@ -40,8 +40,8 @@
         <mkdir dir="${test.build}"/>
         <javac srcdir="${test.src}"
                destdir="${test.build}"
-               classpathref="testbuild.classpath" source="1.4"/>
-    </target>
+               classpathref="testbuild.classpath" source="5"/>
+    </target> -->
 
     <target name="test.run" depends="test.compile" description="Runs the tests">
         <mkdir dir="${test.result}"/>
